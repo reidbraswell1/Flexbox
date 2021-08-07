@@ -7,10 +7,26 @@ h2, h3 {
     text-align: center;
 }
 
+.row-checkbox-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pre-label {
+    margin-right: .5rem;
+}
+
+.row-direction, .row-justify, .row-align {
+    display: flex;
+    justify-content: flex-end;
+    width: 20rem;
+}
+
 .flexbox-row {
     display: flex;
     border: 1px solid black;
-    height: 15rem;
+    height: 30rem;
 }
 
 .flexbox-row-item-1 {
@@ -60,6 +76,65 @@ h2, h3 {
 }
 
 .flexbox-row-item-6 {
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: red;
+}
+
+.flexbox-column {
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    border: 1px solid black;
+}
+
+.flexbox-row-item-7 {
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: green;
+}
+
+.flexbox-row-item-8 {
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: red;
+}
+
+.flexbox-column-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 30rem;
+    border: 1px solid black;
+}
+
+.flexbox-row-item-9 {
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: green;
+}
+
+.flexbox-row-item-10 {
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: red;
+}
+
+.flexbox-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 30rem;
+    border: 1px solid black;
+}
+
+.flexbox-row-item-11 {
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: green;
+}
+
+.flexbox-row-item-12 {
     width: 7.5rem;
     height: 7.5rem;
     background-color: red;
