@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+.flexbox-row {
+    display: flex;
+    border: 1px solid black;
+    height: 15rem;
+}
+
+.flexbox-row-item-1 {
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: green;
+}
+
+.flexbox-row-item-2 {
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: red;
+}
+
+.flexbox-row-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 15rem;
+    border: 1px solid black;
+}
+
+.flexbox-row-item-3 {
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: green;
+}
+
+.flexbox-row-item-4 {
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: red;
+}
+
+.flexbox-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    height: 15rem;
+    border: 1px solid black;
+}
+
+.flexbox-row-item-5 {
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: green;
+}
+
+.flexbox-row-item-6 {
+    width: 7.5rem;
+    height: 7.5rem;
+    background-color: red;
+}
