@@ -1,9 +1,13 @@
 document
   .getElementById("flex-row-direction")
-  .addEventListener("click", flexRow);
+  .addEventListener("click", function () {
+    flexDirection("row");
+  });
 document
   .getElementById("flex-column-direction")
-  .addEventListener("click", flexColumn);
+  .addEventListener("click", function () {
+    flexDirection("column");
+  });
 document
   .getElementById("row-justify-start")
   .addEventListener("click", function () {
@@ -15,16 +19,10 @@ document
     flexJustify("end");
   });
 
-function flexRow() {
-  console.log("--Entering Flex Row--");
+function flexDirection(rowColumn) {
+  console.log(`--Entering Flex Direction -- ${rowColumn}`);
   let row = document.getElementById("flexbox-row");
-  row.style.flexDirection = "row";
-}
-
-function flexColumn() {
-  console.log("--Entering Flex Column--");
-  let column = document.getElementById("flexbox-row");
-  column.style.flexDirection = "column";
+  row.style.flexDirection = rowColumn;
 }
 
 function flexJustify(startEnd) {
