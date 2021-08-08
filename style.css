@@ -20,13 +20,18 @@ h2, h3 {
 .row-direction, .row-justify, .row-align {
     display: flex;
     justify-content: flex-end;
-    width: 20rem;
+    width: rem;
+}
+
+label {
+    margin-left: 1rem;
 }
 
 .flexbox-row {
     display: flex;
     border: 1px solid black;
-    height: 30rem;
+    height: 25rem;
+    margin-top: 1rem;
 }
 
 .flexbox-row-item-1 {
@@ -36,105 +41,6 @@ h2, h3 {
 }
 
 .flexbox-row-item-2 {
-    width: 7.5rem;
-    height: 7.5rem;
-    background-color: red;
-}
-
-.flexbox-row-end {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    height: 15rem;
-    border: 1px solid black;
-}
-
-.flexbox-row-item-3 {
-    width: 7.5rem;
-    height: 7.5rem;
-    background-color: green;
-}
-
-.flexbox-row-item-4 {
-    width: 7.5rem;
-    height: 7.5rem;
-    background-color: red;
-}
-
-.flexbox-row-reverse {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
-    height: 15rem;
-    border: 1px solid black;
-}
-
-.flexbox-row-item-5 {
-    width: 7.5rem;
-    height: 7.5rem;
-    background-color: green;
-}
-
-.flexbox-row-item-6 {
-    width: 7.5rem;
-    height: 7.5rem;
-    background-color: red;
-}
-
-.flexbox-column {
-    display: flex;
-    flex-direction: column;
-    height: 30rem;
-    border: 1px solid black;
-}
-
-.flexbox-row-item-7 {
-    width: 7.5rem;
-    height: 7.5rem;
-    background-color: green;
-}
-
-.flexbox-row-item-8 {
-    width: 7.5rem;
-    height: 7.5rem;
-    background-color: red;
-}
-
-.flexbox-column-end {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    height: 30rem;
-    border: 1px solid black;
-}
-
-.flexbox-row-item-9 {
-    width: 7.5rem;
-    height: 7.5rem;
-    background-color: green;
-}
-
-.flexbox-row-item-10 {
-    width: 7.5rem;
-    height: 7.5rem;
-    background-color: red;
-}
-
-.flexbox-column-reverse {
-    display: flex;
-    flex-direction: column-reverse;
-    height: 30rem;
-    border: 1px solid black;
-}
-
-.flexbox-row-item-11 {
-    width: 7.5rem;
-    height: 7.5rem;
-    background-color: green;
-}
-
-.flexbox-row-item-12 {
     width: 7.5rem;
     height: 7.5rem;
     background-color: red;
