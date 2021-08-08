@@ -1,49 +1,38 @@
+let test = document.getElementById("flex-direction");
 document
-  .getElementById("flex-row-direction")
-  .addEventListener("click", function () {
-    flexDirection("row");
+  .getElementById("flex-direction")
+  .addEventListener("change", function () {
+    let index = this.selectedIndex;
+    if (this[index].value != "Choose") {
+      flexDirection(this[index].value);
+    }
   });
 
 document
-  .getElementById("flex-column-direction")
-  .addEventListener("click", function () {
-    flexDirection("column");
+  .getElementById("flex-justify-content")
+  .addEventListener("change", function () {
+    let index = this.selectedIndex;
+    if (this[index].value != "Choose") {
+      flexJustify(this[index].value);
+    }
   });
 
 document
-  .getElementById("row-justify-start")
-  .addEventListener("click", function () {
-    flexJustify("start");
+  .getElementById("flex-align-items")
+  .addEventListener("change", function () {
+    let index = this.selectedIndex;
+    if (this[index].value != "Choose") {
+      flexAlign(this[index].value);
+    }
   });
 
-document
-  .getElementById("row-justify-center")
-  .addEventListener("click", function () {
-    flexJustify("center");
-  });
-
-document
-  .getElementById("row-justify-end")
-  .addEventListener("click", function () {
-    flexJustify("end");
-  });
-
-document
-  .getElementById("row-align-start")
-  .addEventListener("click", function () {
-     flexAlign("start");
-  });
-
-document
-  .getElementById("row-align-center")
-  .addEventListener("click", function() {
-    flexAlign("center");
-  });
-
-document
-  .getElementById("row-align-end")
-  .addEventListener("click", function () {
-     flexAlign("end");
+  document
+  .getElementById("flex-align-self")
+  .addEventListener("change", function () {
+    let index = this.selectedIndex;
+    if (this[index].value != "Choose") {
+      flexAlignSelf(this[index].value);
+    }
   });
 
 function flexDirection(rowColumn) {
@@ -62,4 +51,9 @@ function flexAlign(startEnd) {
   console.log(`--Entering Flex Align-- ${startEnd}`);
   let align = document.getElementById("flexbox-row");
   align.style.alignItems = startEnd;
+}
+function flexAlignSelf(startEnd) {
+  console.log(`--Entering Flex Align Self -- ${startEnd}`);
+  let align = document.getElementById("flexbox-row-item-2");
+  align.style.alignSelf = startEnd;
 }
