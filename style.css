@@ -36,8 +36,8 @@ select {
 }
 
 .flexbox-row-item-2 {
-    width: 6rem;
-    height: 6rem;
+    width: 6em;
+    height: 6em;
     background-color: burlywood;
 }
 
