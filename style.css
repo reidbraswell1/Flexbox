@@ -1,47 +1,57 @@
 .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 h2, h3 {
     text-align: center;
 }
 
-.row-checkbox-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.label {
+    margin-right: .75rem;
 }
 
-.pre-label {
-    margin-right: .5rem;
+select {
+    margin-bottom: .5rem;
 }
 
 .row-direction, .row-justify, .row-align {
     display: flex;
     justify-content: flex-end;
-    width: rem;
-}
-
-label {
-    margin-left: 1rem;
 }
 
 .flexbox-row {
     display: flex;
     border: 1px solid black;
     height: 25rem;
+    width: 50rem;
     margin-top: 1rem;
 }
 
 .flexbox-row-item-1 {
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 6rem;
+    height: 6rem;
     background-color: green;
 }
 
 .flexbox-row-item-2 {
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 6rem;
+    height: 6rem;
+    background-color: burlywood;
+}
+
+.flexbox-row-item-3 {
+    width: 6rem;
+    height: 6rem;
     background-color: red;
+}
+
+.item-1-content, .item-2-content, .item-3-content {
+    display: inline-block;
+    margin: 50%;
+}
+
+.item-1-content {
+    color: white;
 }
