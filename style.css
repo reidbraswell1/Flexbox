@@ -4,16 +4,20 @@
     align-items: center;
 }
 
+.selection-container {
+    width: 18rem;
+}
+
 h2, h3 {
     text-align: center;
 }
 
 .label {
-    margin-right: .75rem;
 }
 
 select {
     margin-bottom: .5rem;
+    float: right;
 }
 
 .row-direction, .row-justify, .row-align {
